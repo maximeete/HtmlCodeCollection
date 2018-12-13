@@ -1,0 +1,63 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.nav{
+	margin-top: 100px;
+	margin-left: 100px;
+}
+
+.nav-li{
+	width: 160px;
+	background-color: #666;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	border-bottom: 1px #fff solid;
+}
+.tit{
+	width: 160px;
+	height: 40px;
+}
+
+/*原来hover是这样用的！我算是学会了*/
+.nav-li:hover ul{
+	display: block;
+}
+
+.nav-li ul{
+	width: 160px;
+	display: none;
+}
+
+.nav-li ul li{
+	height: 40px;
+	background-color: #333;
+	border-bottom: 1px #ddd dashed;
+	position: relative;
+}
+
+.nav .nav-li:hover{
+	cursor: pointer;
+}
+
+.nav-li ul li:hover .level3{
+	display: block;
+}
+
+.level3{
+	position: absolute;
+	width: 160px;
+	left:160px;
+	top:0px; /*这个也是不能缺的*/
+	background: black;
+	display: none;
+
+}
+
+.level3 .level3-li{
+	height: 40px;
+	width: 160px;
+	border-bottom: 1px #fff solid;
+}
